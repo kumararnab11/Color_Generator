@@ -93,6 +93,12 @@ input{
     box-shadow: 0 0;
     user-select: none;
   }
+
+  @media (max-width:1000px){
+    .btn{
+      cursor: none;
+    }
+  }
   .color_code{
     background: #000;
     color: aliceblue;
