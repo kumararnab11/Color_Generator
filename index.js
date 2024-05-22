@@ -106,7 +106,11 @@ document.querySelector('.copyButton').addEventListener('click', async function()
         await navigator.clipboard.writeText(textToCopy);
         console.log('Text copied to clipboard');
         this.textContent = 'Copied!';
-        setTimeout(() => this.textContent = '📋 Copy', 2000);
+        this.classList.add('copied');
+        setTimeout(() => {
+            this.textContent = '📋 Copy';
+            this.classList.remove('copied');
+        }, 2000);
     } catch (err) {
         console.error('Failed to copy: ', err);
     }
