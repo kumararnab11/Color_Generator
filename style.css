@@ -101,6 +101,7 @@ input{
     border-radius: 5px;
     min-width: 30vw;
     text-align: center;
+    position: relative;
   }
   .color_code_1{
     font-size: 3vw;
@@ -108,3 +109,9 @@ input{
   .color_code_2{
     font-size: 3vw;
   }
+.copyButton{
+  position: absolute;
+  right:2px;
+  top: 2px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}

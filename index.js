@@ -99,3 +99,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+document.querySelector('.copyButton').addEventListener('click', async function() {
+    var textToCopy = document.querySelector('.color_code_2').textContent;
+
+    try {
+        await navigator.clipboard.writeText(textToCopy);
+        console.log('Text copied to clipboard');
+        this.textContent = 'Copied!';
+        setTimeout(() => this.textContent = '📋 Copy', 2000);
+    } catch (err) {
+        console.error('Failed to copy: ', err);
+    }
+});
+
+
