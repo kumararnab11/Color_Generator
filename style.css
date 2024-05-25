@@ -5,14 +5,16 @@
 .header{
     display: flex;
     justify-content:space-around;
-    padding:10px 5px;
+    align-items: center;
     box-shadow: 2px 2px 5px gray;
     background: rgb(211, 215, 221);
+    height: 8vh;
 }
 .title{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: rgb(22, 3, 41);
   text-shadow: 1px 1px 2px blue;
+  font-size: 20px;
 }
 input{
     display: none;
@@ -20,6 +22,10 @@ input{
 }
 .blue{
   color: blue;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
 }
 .norm{
   color:blue;
@@ -29,7 +35,7 @@ input{
 }
 .opt{
     display: flex;
-    gap: 15%;
+    gap: 5vw;
 }
 .back{
     height: 90vh;
@@ -37,7 +43,7 @@ input{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5vw;
+    gap: 10vh;
 }
 .btn {
     --primary: 255, 90, 120;
@@ -100,6 +106,10 @@ input{
     }
   }
   .color_code{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
     background: #000;
     color: aliceblue;
     padding: 2vw;
